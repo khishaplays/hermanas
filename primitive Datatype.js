@@ -56,6 +56,8 @@ console.log(khishaIsSleeping);
   It is used to indicate that a variable has no value or that an object property does not exist.*/
 let emptyValue=null;
 console.log(emptyValue);
+emptyValue='lisa';//reassigning the value of emptyValue to a string.
+console.log(emptyValue);
 
 /*Undefined:represents the absence of a value or the absence of a variable.
  It is a primitive data type that has only one value: undefined.
@@ -63,4 +65,10 @@ console.log(emptyValue);
  Note: never explicitly assign undefined to a variable. 
  It is better to use null to indicate the absence of a value.*/
   
+//let me use arrays to remind myself of the difference between null and undefined for future reference.
+let arr1=[1,2,3];
+console.log(arr1[5]);//undefined because the index 5 does not exist in the array.
+let arr2=[1,2,3,null];
+console.log(arr2[3]);//null because the index 3 exists in the array but has no value assigned to it.
+
 
