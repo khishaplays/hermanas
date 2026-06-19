@@ -16,9 +16,23 @@ let numb1 = "10"
 let numb2 = 10
 //string====number-false
 //numb1==numb2-type conversion-true
-let srtictEqual = numb1 === numb2; // boolean value false because the values are equal but the types are different (string vs number)
+let strictEqual = numb1 === numb2; // boolean value false because the values are equal but the types are different (string vs number)
 console.log(`numb1=${numb1}===numb2=${numb2}; 
-    ans=${ srtictEqual} its type is ${typeof srtictEqual}`); // using template strings to log the result
-    let nonstrictEqual = numb1 == numb2; // boolean value true because the values are equal and the types are ignored
+    ans=${strictEqual} its type is ${typeof strictEqual}`); // using template strings to log the result
+    let nonstrictEquality = numb1 == numb2; // boolean value true because the values are equal and the types are ignored
 console.log(`numb1=${numb1}==numb2=${numb2}; 
      ans=${nonstrictEquality} its type is ${typeof nonstrictEquality}`); // using template strings to log the result   
+
+    /* inequality operators
+    different types should be equal
+    string is not equal to number
+    */ 
+
+    let val1 = "khisha"
+    let val2 = "khisha"
+let strictInequality = val1 !== val2; // boolean value true because the values are equal but the types are different (string vs number)
+console.log(`val1=${val1}!==val2=${val2}; 
+    ans=${strictInequality} its type is ${typeof strictInequality}`); // using template strings to log the result
+    let Inequality = val1 != val2; // boolean value true because the values are equal but     the types are ignored
+console.log(`val1=${val1}!=val2=${val2}; 
+     ans=${Inequality} its type is ${typeof Inequality}`); // using template strings to log the result   
