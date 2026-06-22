@@ -36,3 +36,17 @@ console.log(`val1=${val1}!==val2=${val2};
     let Inequality = val1 != val2; // boolean value true because the values are equal but     the types are ignored
 console.log(`val1=${val1}!=val2=${val2}; 
      ans=${Inequality} its type is ${typeof Inequality}`); // using template strings to log the result   
+     /*greater than and less than operators
+     these operators compare the values and return true or false based on the comparison
+     */
+     let num3 = 5;
+     let num4 = 10;
+
+
+     let str1="a"
+        let str2="B"
+     console.log(`num3>num4 ${num3>num4}`); // false because 5 is not greater than 10
+     console.log(`str1>str2 ${str1>str2}`); // true because "a" is  greater than "B" in alphabetical order
+
+console.log(`num3<num4 ${num3<num4}`); // true because 5 is less than 10
+console.log(`str1<str2 ${str1<str2}`); // false because "a" is not less than "B" in alphabetical order
