@@ -25,5 +25,9 @@ console.log(`khisha is age is greater than 25 and has more than 20k in her accou
 let simplified=khisha_age>age25&&khisha_balance>20000
 console.log(`simplified ${simplified}`)
 console.log(`further simplification is${khisha_age>25&&khisha_balance>20000}`)
-/*Not Operator */
 
+
+
+/*or operator ..atleast one statement has to be true*/
+console.log(`this is not true= ${true}`)
+console.log(`this is not false= ${!false}`)
