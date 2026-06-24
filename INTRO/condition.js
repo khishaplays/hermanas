@@ -1,5 +1,5 @@
 /*condition operators 
-controls the flow of the 
+controls the flow of the values based on acondition in a single line of code
 -if else
 - else if */
 
