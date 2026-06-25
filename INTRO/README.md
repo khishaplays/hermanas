@@ -37,7 +37,7 @@ var city = "Nairobi";
 
 Rules for naming variables:
 
-- Variable names can contain letters, numbers, _ and $
+- Variable names can contain letters, numbers, \_ and $
 - They cannot start with a number
 - Spaces are not allowed
 - JavaScript keywords cannot be used as variable names
@@ -47,7 +47,7 @@ Valid variable names:
 
 let firstName = "Khisha";
 let age2 = 20;
-let _score = 100;
+let \_score = 100;
 
 Invalid variable names:
 

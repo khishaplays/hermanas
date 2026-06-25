@@ -12,41 +12,40 @@ Comparison operators are used to compare two values and return a boolean result 
 
 Example:
 */
-let numb1 = "10"
-let numb2 = 10
+let numb1 = "10";
+let numb2 = 10;
 //string====number-false
 //numb1==numb2-type conversion-true
 let strictEqual = numb1 === numb2; // boolean value false because the values are equal but the types are different (string vs number)
 console.log(`numb1=${numb1}===numb2=${numb2}; 
     ans=${strictEqual} its type is ${typeof strictEqual}`); // using template strings to log the result
-    let nonstrictEquality = numb1 == numb2; // boolean value true because the values are equal and the types are ignored
+let nonstrictEquality = numb1 == numb2; // boolean value true because the values are equal and the types are ignored
 console.log(`numb1=${numb1}==numb2=${numb2}; 
-     ans=${nonstrictEquality} its type is ${typeof nonstrictEquality}`); // using template strings to log the result   
+     ans=${nonstrictEquality} its type is ${typeof nonstrictEquality}`); // using template strings to log the result
 
-    /* inequality operators
+/* inequality operators
     different types should be equal
     string is not equal to number
-    */ 
+    */
 
-    let val1 = "khisha"
-    let val2 = "khisha"
+let val1 = "khisha";
+let val2 = "khisha";
 let strictInequality = val1 !== val2; // boolean value true because the values are equal but the types are different (string vs number)
 console.log(`val1=${val1}!==val2=${val2}; 
     ans=${strictInequality} its type is ${typeof strictInequality}`); // using template strings to log the result
-    let Inequality = val1 != val2; // boolean value true because the values are equal but     the types are ignored
+let Inequality = val1 != val2; // boolean value true because the values are equal but     the types are ignored
 console.log(`val1=${val1}!=val2=${val2}; 
-     ans=${Inequality} its type is ${typeof Inequality}`); // using template strings to log the result   
-     /*greater than and less than operators
+     ans=${Inequality} its type is ${typeof Inequality}`); // using template strings to log the result
+/*greater than and less than operators
      these operators compare the values and return true or false based on the comparison
      */
-     let num3 = 5;
-     let num4 = 10;
+let num3 = 5;
+let num4 = 10;
 
+let str1 = "a";
+let str2 = "B";
+console.log(`num3>num4 ${num3 > num4}`); // false because 5 is not greater than 10
+console.log(`str1>str2 ${str1 > str2}`); // true because "a" is  greater than "B" in alphabetical order
 
-     let str1="a"
-        let str2="B"
-     console.log(`num3>num4 ${num3>num4}`); // false because 5 is not greater than 10
-     console.log(`str1>str2 ${str1>str2}`); // true because "a" is  greater than "B" in alphabetical order
-
-console.log(`num3<num4 ${num3<num4}`); // true because 5 is less than 10
-console.log(`str1<str2 ${str1<str2}`); // false because "a" is not less than "B" in alphabetical order
+console.log(`num3<num4 ${num3 < num4}`); // true because 5 is less than 10
+console.log(`str1<str2 ${str1 < str2}`); // false because "a" is not less than "B" in alphabetical order

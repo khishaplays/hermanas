@@ -5,11 +5,11 @@ real nummbers
 positive
 negative numbers
 */
-let number1=23;//real number
+let number1 = 23; //real number
 console.log(number1);
-let number2=34.34;//floating number
+let number2 = 34.34; //floating number
 console.log(number2);
-let number3=-5;//negative number
+let number3 = -5; //negative number
 console.log(number3);
 
 /*
@@ -20,11 +20,11 @@ Ways of creating strings:
 3. using backticks
 */
 
-let str1='khisha types';//single quotes
+let str1 = "khisha types"; //single quotes
 console.log(str1);
-let str2="khisha codes"; //double quotes
+let str2 = "khisha codes"; //double quotes
 console.log(str2);
-let str3=`khisha learns`; //backticks
+let str3 = `khisha learns`; //backticks
 console.log(str3);
 
 /*reasons for different ways of creating strings:
@@ -33,30 +33,28 @@ console.log(str3);
 3. backticks allow us to use string interpolation.
 4. backticks allow us to create multi-line strings.
 5. backticks allow us to use special characters without escaping them.  
- */                         
+ */
 //below is an example of how to use backticks without escaping special characters.
-let str4=`khisha's example`;
+let str4 = `khisha's example`;
 console.log(str4);
 
 // alsofound an example of how string interpolation works in backticks.
-let name='khisha';
-let str5=`my name is ${name}`;
+let name = "khisha";
+let str5 = `my name is ${name}`;
 console.log(str5);
 
-
 /*Next is-Boolean:represents true or false values.*/
-let khishaIsListening=true;
+let khishaIsListening = true;
 console.log(khishaIsListening);
-let khishaIsSleeping=false;
+let khishaIsSleeping = false;
 console.log(khishaIsSleeping);
-
 
 /*Null:represents the absence of any value.
  It is a primitive data type that has only one value: null.
   It is used to indicate that a variable has no value or that an object property does not exist.*/
-let emptyValue=null;
+let emptyValue = null;
 console.log(emptyValue);
-emptyValue='lisa';//reassigning the value of emptyValue to a string.
+emptyValue = "lisa"; //reassigning the value of emptyValue to a string.
 console.log(emptyValue);
 
 /*Undefined:represents the absence of a value or the absence of a variable.
@@ -64,11 +62,9 @@ console.log(emptyValue);
   It is used to indicate that a variable has not been assigned a value or that an object property does not exist.
  Note: never explicitly assign undefined to a variable. 
  It is better to use null to indicate the absence of a value.*/
-  
+
 //let me use arrays to remind myself of the difference between null and undefined for future reference.
-let arr1=[1,2,3];
-console.log(arr1[5]);//undefined because the index 5 does not exist in the array.
-let arr2=[1,2,3,null];
-console.log(arr2[3]);//null because the index 3 exists in the array but has no value assigned to it.
-
-
+let arr1 = [1, 2, 3];
+console.log(arr1[5]); //undefined because the index 5 does not exist in the array.
+let arr2 = [1, 2, 3, null];
+console.log(arr2[3]); //null because the index 3 exists in the array but has no value assigned to it.

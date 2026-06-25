@@ -5,14 +5,13 @@ To accomplish this, you need to understand how to use expressions and variable a
 */
 
 // Step 1: Define the variables for the order
-const booksPrice = 50;//used const to define a variable that cannot be reassigned.
-const booksQuantity = 100;//quantity of books purchased
-const tshirtsPrice = 75;//price of a single t-shirt
-const tshirtQuantity = 50;//quantity of t-shirts purchased
+const booksPrice = 50; //used const to define a variable that cannot be reassigned.
+const booksQuantity = 100; //quantity of books purchased
+const tshirtsPrice = 75; //price of a single t-shirt
+const tshirtQuantity = 50; //quantity of t-shirts purchased
 
-
-const shippingFee = 5;//Fixed shipping fee
-const taxRate = 0.08;//tax rate of 8%
+const shippingFee = 5; //Fixed shipping fee
+const taxRate = 0.08; //tax rate of 8%
 
 /*CALCULATE THE TOTAL PRICE OF THE ORDER
 To calculate the total price of the order, we need to follow these steps:
@@ -41,4 +40,3 @@ const finalTotalPrice = subtotal + taxAmount + shippingFee;
 //display the total cost
 //this is displayed using console.log() method to display the final total price of the order in the console.
 console.log(`The final total price of the order is: $${finalTotalPrice}`);
-

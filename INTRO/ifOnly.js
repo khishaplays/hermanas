@@ -7,16 +7,23 @@ alert(`you entered ${age}`);
 if (age < 10) {
   alert("you are a baby.");
   console.log("you are a baby.");
-} else if (age < 13) {
+}
+if (age > 13) {
   alert("you are a teen");
   console.log("you are a teen.");
-} else if (age < 18) {
+}
+
+if (age > 18) {
   alert("you are elligible to vote");
   console.log("you are elligible to vote");
-} else if (age < 28) {
+}
+
+if (age > 28) {
   alert("get kids");
   console.log("get kids.");
-} else if (age < 45) {
+}
+
+if (age > 45) {
   alert("travel the world");
   console.log("travel the world baby.");
 }
