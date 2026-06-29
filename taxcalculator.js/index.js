@@ -24,8 +24,6 @@ while (true) {
 }
 
 console.log(`Gross salary is ${grossSalary}, type is ${typeof grossSalary}`);
-
-// PAYE calculation
 // PAYE calculation
 let paye;
 
@@ -51,3 +49,46 @@ if (grossSalary <= 24000) {
 }
 
 console.log(`PAYE is ${paye}`);
+
+// NSSF Calculation
+let nssf;
+
+// If salary is 9,000 or less
+if (grossSalary <= 9000) {
+  nssf = grossSalary * 0.06;
+}
+
+// If salary is between 9,001 and 108,000
+else if (grossSalary <= 108000) {
+  nssf = 9000 * 0.06 + (grossSalary - 9000) * 0.06;
+}
+
+// If salary is above 108,000
+else {
+  nssf = 6480; // Maximum employee contribution
+}
+
+// Display NSSF deduction
+console.log(`NSSF: KES ${nssf}`);
+
+// Calculate taxable pay
+let taxablePay = grossSalary - nssf;
+
+console.log(`Taxable Pay: KES ${taxablePay}`);
+
+// SHIF (2.75% of gross salary)
+let shif = grossSalary * 0.0275;
+
+// Housing Levy (1.5% of gross salary)
+let housingLevy = grossSalary * 0.015;
+
+console.log(`SHIF: KES ${shif}`);
+console.log(`Housing Levy: KES ${housingLevy}`);
+alert(
+  `Gross Salary: KES ${grossSalary}
+NSSF: KES ${nssf}
+Taxable Pay: KES ${taxablePay}
+PAYE: KES ${paye}
+SHIF: KES ${shif}
+Housing Levy: KES ${housingLevy}`,
+);

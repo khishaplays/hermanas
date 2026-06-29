@@ -37,3 +37,35 @@ Tax charged on taxable income.
 Calculated using tax bands.
 Different portions of income are taxed at different rates.
 Total PAYE is reduced by Personal Relief.
+
+### NSSF
+
+-Tier 1 -6%=90000
+-Tier 2-6%=9k-108k
+-max is 6480
+..employer matches employees contribution
+
+// NSSF Calculation
+
+let nssf;
+
+// If salary is 8,000 or less
+if (grossSalary <= 8000) {
+// Employee contributes 6% of salary
+nssf = grossSalary \* 0.06;
+}
+
+// If salary is between 8,001 and 72,000
+else if (grossSalary <= 72000) {
+// Tier I contribution + Tier II contribution
+nssf = (8000 _ 0.06) + ((grossSalary - 8000) _ 0.06);
+}
+
+// If salary is above 72,000
+else {
+// Maximum employee contribution
+nssf = 4320;
+}
+
+// Display NSSF deduction
+console.log("NSSF: KES " + nssf);
