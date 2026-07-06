@@ -12,3 +12,5 @@ function salaryGrossPromptProcess(message = "Enter your gross salary:") {
 }
 
 salaryGrossPromptProcess();
+
+function factorial(n = 1, lastsolution = 1) {}
