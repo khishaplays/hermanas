@@ -3,7 +3,7 @@ const fs = require("fs");
 function createFile() {
   let currentDate = new Date();
   let fileName = `file-${currentDate.getTime()}.txt`;
-  let fileData = `This is a test file created on ${currentDate.toLocaleString()}`;
+  let fileData = `khisha created on ${currentDate.toLocaleString()}`;
 
   let data = " ";
   for (let i = 0; i < 10000; i++) {
