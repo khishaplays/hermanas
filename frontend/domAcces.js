@@ -43,22 +43,34 @@ const otheritems = ["kiwi", "pineapple", "Dragon Fruit"];
 const originalDiv = document.querySelector("#div1").innerHTML;
 
 function original() {
-  console.log("original clicked ");
-  //resets the div to its original value
+  console.log("original clicked");
   document.querySelector("#div1").innerHTML = originalDiv;
 }
+
 function replace() {
   console.log("replace clicked");
-  //some html
-  const newhtml = `
-  <h3> list drinks</h3>
-  <ul> 
-  <li class="list-item"> orange water</li>
-  <li class="list-item"> orange water</li>
-  <li class="list-item"> orange water</li>
+
+  const newHtml = `
+  <h3>List Drinks</h3>
+  <ul>
+    <li class="list-item">orange</li>
+    <li class="list-item">tea</li>
+    <li class="list-item">smoothie</li>
   </ul>`;
-  document.querySelector("#div1").innerHTML = newhtml;
+
+  document.querySelector("#div1").innerHTML = newHtml;
 }
+
 function update() {
   console.log("update clicked");
+
+  let html = "<h3>Fruit List</h3><ul>";
+
+  for (let i = 0; i < otheritems.length; i++) {
+    html += `<li class="list-item">${otheritems[i]}</li>`;
+  }
+
+  html += "</ul>";
+
+  document.querySelector("#div1").innerHTML = html;
 }
